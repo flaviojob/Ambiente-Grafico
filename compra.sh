@@ -21,8 +21,8 @@ read parcelas
 echo "Digite a taxa de juros"
 read taxa
 echo "O produto $produto sai por "
-echo $preco*(1+$taxa/100)^$parcelas | bc -l
+echo "$preco*(1+($taxa/100))^$parcelas" | bc -l
 echo "O valor da parcela sera " 
-echo ($preco*(1+$taxa/100)^$parcelas)/$parcelas | bc -l
+echo "($preco*(1+($taxa/100))^$parcelas)/$parcelas" | bc -l
 fi
 
